@@ -1,0 +1,11 @@
+read input1
+read input2
+read input3
+
+if [[ $input1 == $input2 && $input1 == $input3 ]]; then 
+    echo 'EQUILATERAL' 
+elif [[ $input1 == $input2 || $input1 == $input3 || $input3 == $input2  ]]; then    
+    echo 'ISOSCELES'
+else   
+    echo 'SCALENE'
+fi
